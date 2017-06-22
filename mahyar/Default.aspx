@@ -19,7 +19,7 @@
 <body>
 
     <div class="container">
-        <i><i class="fa fa-6 fa-bath" aria-hidden="true"></i></i>
+       
     </div>
 
     <script src="https://use.fontawesome.com/8b3c8638f2.js"></script>

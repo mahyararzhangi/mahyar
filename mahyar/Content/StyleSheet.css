@@ -1,9 +1,10 @@
 ﻿body {
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQYV2NkQID/DAwMjCAumIACagkCAACfBQY+DKCVAAAAAElFTkSuQmCC)repeat;
+     background-image: url('images/COMING-SOON.jpg');
+     background-size:cover;
 }
 
-.coloring{
-    width:100%;
-    height:30px;
-    background-color:green;
+.coloring {
+    width: 100%;
+    height: 30px;
+   
 }
