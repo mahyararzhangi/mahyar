@@ -1,35 +1,83 @@
-﻿.logo {
+﻿body {
+  background-image: url('../images/creamy-living-room-with-large-sofa-and-appealing-window-panels.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo-area {
+  margin-top: 200px;
+}
+.logo-area .logo {
   display: inline-block;
 }
-.logo .m {
+.logo-area .logo .m {
   height: 200px;
   width: 20px;
   background-color: black;
   margin: 5px;
   float: left;
 }
-.logo .first-m {
+@keyframes top-right {
+  from {
+    transform: translate(-10px, 20px) skewX(-25deg);
+  }
+  to {
+    transform: translate(0px, 0px) skewX(-25deg);
+    opacity: 1;
+  }
+}
+@keyframes down-right {
+  from {
+    transform: translate(-10px, -20px) skewX(25deg);
+  }
+  to {
+    transform: translate(0px, 0px) skewX(25deg);
+    opacity: 1;
+  }
+}
+@keyframes left-right {
+  from {
+    transform: translate(20px);
+  }
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+.logo-area .logo .first-m {
+  opacity: 0;
   width: 40px;
+  position: relative;
   transform: skewX(-25deg);
+  animation: top-right 0.4s ease forwards;
 }
-.logo .second-m {
+.logo-area .logo .second-m {
+  opacity: 0;
   transform: skewX(25deg);
   margin-left: 70px;
+  animation: down-right 0.4s ease forwards;
+  animation-delay: .2s;
 }
-.logo .third-m {
+.logo-area .logo .third-m {
+  opacity: 0;
   transform: skewX(-25deg);
+  animation: top-right 0.4s ease forwards;
+  animation-delay: .4s;
 }
-.logo .fourth-m {
+.logo-area .logo .fourth-m {
+  opacity: 0;
   transform: skewX(25deg);
   margin-left: 70px;
+  animation: down-right 0.4s ease forwards;
+  animation-delay: .6s;
 }
-.logo .fifth-m {
+.logo-area .logo .fifth-m {
+  opacity: 0;
   height: 190px;
   margin-left: -34px;
   margin-top: 43px;
   transform: rotate(65deg) skewX(-25deg);
 }
-.logo .polygon {
+.logo-area .logo .polygon {
   border-bottom: 28px solid red;
   border-right: 13px solid transparent;
   border-left: 13px solid transparent;
@@ -37,7 +85,7 @@
   position: absolute;
   bottom: 38px;
 }
-.logo H1 {
+.logo-area .logo H1 {
   font-family: 'Mongolian Baiti';
   font-weight: 700;
   font-size: 35px;
@@ -45,4 +93,9 @@
   margin-left: -44px;
   top: 190px;
   position: absolute;
+}
+.square {
+  width: 100em;
+  height: 10%;
+  background-color: green;
 }

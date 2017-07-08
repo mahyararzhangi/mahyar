@@ -20,8 +20,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 text-center">
-                <div class="logo">
+            <div class="logo-area col-sm-6 col-sm-offset-3 text-center">
+                <div class="logo img-responsive">
                     <div class="m first-m"></div>
                     <div class="m second-m"></div>
                     <div class="m third-m"></div>
@@ -33,21 +33,13 @@
 
             </div>
         </div>
-
-          <div class="row">
+        <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
-                <div class="logo-responsive">
-                    <div class="a first-a"></div>
-                    <div class="a second-a"></div>
-                    <div class="a third-a"></div>
-                    <div class="a fourth-a"></div>
-                    <div class="a fifth-a"></div>
-                    <div class="polygon"></div>
-                    <h1>MAHYAR ARZHANGI</h1>
-                </div>
+                <div class="square"></div>
 
             </div>
         </div>
+
     </div>
 
 
