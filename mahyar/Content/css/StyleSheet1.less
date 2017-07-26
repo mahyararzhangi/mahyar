@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url('../images/creamy-living-room-with-large-sofa-and-appealing-window-panels.jpg');
+    background-image: url('../images/wood _texture1584.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -18,38 +18,7 @@
             float: left;
         }
 
-        @keyframes top-right {
-            from {
-                transform: translate(-10px,20px)skewX(-25deg);
-            }
-
-            to {
-                transform: translate(0px,0px)skewX(-25deg);
-                opacity: 1;
-            }
-        }
-
-        @keyframes down-right {
-            from {
-                transform: translate(-10px,-20px)skewX(25deg);
-            }
-
-            to {
-                transform: translate(0px,0px)skewX(25deg);
-                opacity: 1;
-            }
-        }
-
-        @keyframes left-right {
-            from {
-                transform: translate(20px);
-            }
-
-            to {
-                transform: translate(0px);
-                opacity:1;
-            }
-        }
+       
 
         .first-m {
             opacity: 0;
@@ -85,10 +54,13 @@
 
         .fifth-m {
             opacity: 0;
-            height: 190px;
+            width: 190px;
+            height:20px !important;
             margin-left: -34px;
             margin-top: 43px;
-            transform: rotate(65deg) skewX(-25deg);
+            transform:skew(-25deg);
+            animation: left-right;
+            animation-fill-mode:forwards;
         }
 
         .polygon {
@@ -98,6 +70,10 @@
             margin-left: 132px;
             position: absolute;
             bottom: 38px;
+            opacity: 0;
+            animation: polygonfade .8s;
+            animation-delay: .9s;
+            animation-fill-mode: forwards;
         }
 
         H1 {
@@ -117,3 +93,46 @@
     height: 10%;
     background-color: green;
 }
+ @keyframes top-right {
+            from {
+                transform: translate(-10px,20px)skewX(-25deg);
+            }
+
+            to {
+                transform: translate(0px,0px)skewX(-25deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes down-right {
+            from {
+                transform: translate(-10px,-20px)skewX(25deg);
+            }
+
+            to {
+                transform: translate(0px,0px)skewX(25deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes left-right {
+            from {
+                opacity:0;
+                transform: translate(20px);
+            }
+
+            to {
+                transform: translate(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes polygonfade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
