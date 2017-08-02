@@ -208,6 +208,7 @@
     <Content Include="Content\css\StyleSheet1.min.css">
       <DependentUpon>StyleSheet1.css</DependentUpon>
     </Content>
+    <Content Include="Content\images\pattern.png" />
     <Content Include="Content\images\wood _texture1584.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -1,7 +1,12 @@
 ﻿body {
-  background-image: url('../images/wood _texture1584.jpg');
+  background-image: url('../images/pattern.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main-nav {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  padding-top: 60px;
 }
 .logo-area {
   margin-top: 200px;
